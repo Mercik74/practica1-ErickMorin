@@ -16,6 +16,14 @@ $films = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <div class="container mt-5">
         <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <span class="me-3">
+                    👤 <?= $_SESSION['username'] ?>
+                </span>
+                <a href="../auth/logout.php" class="btn btn-danger btn-sm">
+                    Logout
+                </a>
+            </div>
             <h1>Películas (Sakila)</h1>
             <a href="create.php" class="btn btn-primary">➕ Nueva película</a>
         </div>
