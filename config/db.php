@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $db   = "sakila";
-$user = "hola";
-$pass = "12345"; // en WSL normalmente root no tiene password
+$user = "db_22030907";
+$pass = "22030907"; // en WSL normalmente root no tiene password
 
 try {
     $pdo = new PDO(
